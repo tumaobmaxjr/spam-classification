@@ -42,9 +42,7 @@ pip install matplotlib
 1. Clone or download the project repository from GitHub.
 2. Navigate to the project directory in your terminal.
 3. Run the Python script containing the code for spam classification.
-```
-python spam_classification.py
-```
+
 The script will perform the following steps:
   - Read the dataset from 'spam.csv.'
   - Clean the data by removing unnecessary columns and renaming them.
