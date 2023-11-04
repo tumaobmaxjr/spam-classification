@@ -66,18 +66,37 @@ The model's performance can be evaluated using the following metrics:
 <table>
   <tr>
     <th></th>
-    <th>Predicted ham</th>
-    <th>Predicted spam</th>
-  </tr>
-  <tr>
-    <th>Actual ham</th>
-    <td>[953]</td>
-    <td>[12]</td>
-  </tr>
-  <tr>
     <th>Actual spam</th>
-    <td>[6]</td>
-    <td>[144]</td>
+    <th>Actual ham</th>
+  </tr>
+  <tr>
+    <th>Prediction spam</th>
+    <td>953</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <th>Predicted ham</th>
+    <td>6</td>
+    <td>144</td>
   </tr>
 </table>
+
+- Correctly classified values: 953 + 144 = 1097
+- Total number of values: 1115
+- Overall accuracy: 1097 / 1115 = 0.9838565022421
+
+## Example Usage
+<a id="example-usage"></a>
+You can use the trained model to classify text messages. Here's an example of how to do it:
+
+```python
+while True:
+    msg = input("Type the message: ")
+    msg = cv.transform([msg])
+    prediction = model.predict(msg)
+    print("This is a", prediction[0], "message")
+```
+Simply input a message, and the model will predict whether it's "spam" or "ham."
+
+
 
