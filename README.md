@@ -2,11 +2,11 @@
 # Spam Classification
 
 ## Coursework Overview
-<a id="Coursework-overview"></a>
+<a id="coursework-overview"></a>
 This coursework is designed to classify text messages as either "spam" or "ham" (non-spam). It utilizes a Multinomial Naive Bayes model for text classification. The model is trained on a dataset of SMS messages and is capable of predicting whether a given message is spam or not.
 
 ## Table of Contents
-- [Coursework Overview](#coursework-overview)
+- [Project Overview](#coursework-overview)
 - [Data Source](#data-source)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
